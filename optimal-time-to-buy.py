@@ -26,7 +26,7 @@ def best_time_to_buy(data):
     return best_time, lowest_avg_price
 
 # Fetch intraday BTC data
-btc_data = fetch_intraday_data('BTC-USD', interval='5m', period='7d')
+btc_data = fetch_intraday_data('BTC-USD', interval='1d', period='1y')
 
 # Determine the best time of day to buy BTC
 best_time, lowest_avg_price = best_time_to_buy(btc_data)
